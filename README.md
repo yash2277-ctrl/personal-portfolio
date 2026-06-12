@@ -379,3 +379,5 @@ Full Stack Developer | MERN Stack Specialist
 - **2026-05-28**: Update dependencies
 
 - **2026-06-09**: Add new features
+
+- **2026-06-13**: Improve error handling
