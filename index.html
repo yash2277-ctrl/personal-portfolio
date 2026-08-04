@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#000000">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self' https://videos.pexels.com https://cdn.pixabay.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Kartik Sahu — MERN Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=10">
+</head>
+<body>
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-text">
+                <span class="loader-line">"Do not go gentle</span>
+                <span class="loader-line">into that good night."</span>
+            </div>
+            <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+            <span class="loader-percent">0%</span>
+        </div>
+    </div>
+
+    <!-- NAV -->
+    <nav id="mainNav">
+        <a href="#" class="nav-logo">KS</a>
+        <div class="nav-links" id="navLinks">
+            <a href="#about">About</a>
+            <a href="#projects">Work</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+            <button class="nav-resume-link open-resume-btn" type="button">Resume</button>
+        </div>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+    <div class="nav-backdrop" id="navBackdrop"></div>
+
+    <!-- SCROLL PROGRESS -->
+    <div class="scroll-progress"><div class="scroll-progress-bar"></div></div>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="hero">
+        <div class="hero-video-wrap">
+            <video autoplay muted loop playsinline id="heroVideo">
+                <source src="https://videos.pexels.com/video-files/33692880/14311882_1920_1080_30fps.mp4" type="video/mp4">
+            </video>
+            <div class="hero-video-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-tag">MERN Stack Developer</p>
+            <h1 class="hero-name">
+                <span class="hero-name-line">KARTIK</span>
+                <span class="hero-name-line">SAHU</span>
+            </h1>
+            <p class="hero-sub">Building digital experiences that transcend dimensions.</p>
+            <div class="hero-cta-group">
+                <a href="#projects" class="hero-cta">Explore My Universe <span>&darr;</span></a>
+                <button class="hero-cta hero-cta-secondary open-resume-btn">View Resume <span>&rarr;</span></button>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- ==================== STATEMENT ==================== -->
+    <section id="statement">
+        <div class="container">
+            <p class="statement-text" data-splitting>
+                I craft <strong>full-stack web applications</strong> that push the boundaries of what's possible. From <strong>React interfaces</strong> that feel alive to <strong>Node.js backends</strong> that scale infinitely — I build the future, one commit at a time.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== VIDEO DIVIDER ==================== -->
+    <section class="video-divider">
+        <video muted loop playsinline preload="none" data-lazy-video>
+            <source src="https://cdn.pixabay.com/video/2016/12/16/6797-196071980_large.mp4" type="video/mp4">
+        </video>
+        <div class="video-divider-overlay"></div>
+        <div class="video-divider-text">
+            <span class="vd-label">CHAPTER 01</span>
+            <h2>Selected Work</h2>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Projects</h2>
+            </div>
+        </div>
+        <div class="projects-horizontal-wrapper">
+            <div class="projects-grid horizontal-track">
+                <article class="project-card" data-project="1">
+                    <div class="project-card-visual">
+                        <img src="screenshots/void.png" alt="VØID / CodeForge" class="project-img">
+                        <div class="project-card-number">01</div>
+                    </div>
+                    <div class="project-card-info">
+                        <h3>VØID / CodeForge</h3>
+                        <p>AI-powered app builder with prompt-to-code generation, RAG design pipeline, Monaco editor, and GitHub publishing.</p>
+                        <div class="project-tags">
+                            <span>React</span><span>TypeScript</span><span>Supabase</span><span>Monaco</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#">Live Demo &rarr;</a>
+                            <a href="#">GitHub &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card" data-project="2">
+                    <div class="project-card-visual">
+                        <img src="screenshots/doro-ai.png" alt="DORO AI" class="project-img">
+                        <div class="project-card-number">02</div>
+                    </div>
+                    <div class="project-card-info">
+                        <h3>DORO AI</h3>
+                        <p>Local AI desktop assistant with voice interaction, conversation history, and system controls — runs 100% offline via Electron.</p>
+                        <div class="project-tags">
+                            <span>React</span><span>Electron</span><span>FastAPI</span><span>Whisper</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#">Live Demo &rarr;</a>
+                            <a href="#">GitHub &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card" data-project="3">
+                    <div class="project-card-visual">
+                        <img src="screenshots/demandsense.png" alt="DemandSense" class="project-img">
+                        <div class="project-card-number">03</div>
+                    </div>
+                    <div class="project-card-info">
+                        <h3>DemandSense</h3>
+                        <p>Full-stack demand intelligence platform with Prophet/ARIMA forecasting, RAG context retrieval, and a cyber-themed dashboard.</p>
+                        <div class="project-tags">
+                            <span>React</span><span>FastAPI</span><span>FAISS</span><span>Recharts</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#">Live Demo &rarr;</a>
+                            <a href="#">GitHub &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card" data-project="4">
+                    <div class="project-card-visual">
+                        <img src="screenshots/phonix.png" alt="PHØNIX AI" class="project-img">
+                        <div class="project-card-number">04</div>
+                    </div>
+                    <div class="project-card-info">
+                        <h3>PHØNIX AI</h3>
+                        <p>Full-featured AI application with chat interface, authentication screens, dashboard, and an interactive 3D landing page.</p>
+                        <div class="project-tags">
+                            <span>HTML/CSS</span><span>Three.js</span><span>GSAP</span><span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#">Live Demo &rarr;</a>
+                            <a href="#">GitHub &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+<!-- ==================== METEOR SHOWER WRAPPER ==================== -->
+<div id="meteor-wrapper" style="position: relative; z-index: 1;">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+        <canvas id="threejs-canvas" style="position: sticky; top: 0; left: 0; width: 100%; height: 100vh; pointer-events: none; background: #000;"></canvas>
+    </div>
+
+    <!-- ==================== 3D SCENE ==================== -->
+    <section id="threejs-section">
+        <div class="threejs-overlay">
+            <div class="panel-header">
+                <span class="pulse-dot"></span>
+                <span class="panel-title">Cosmic Render Engine v3.0</span>
+            </div>
+            <h2>MAX METEOR SHOWER</h2>
+            <div class="panel-metrics">
+                <div class="metric">
+                    <span class="m-label">Active Particles</span>
+                    <span class="m-value">10,000+ Stars</span>
+                </div>
+                <div class="metric">
+                    <span class="m-label">Meteor Rate</span>
+                    <span class="m-value">Hyper-Velocity</span>
+                </div>
+                <div class="metric">
+                    <span class="m-label">Nebula Field</span>
+                    <span class="m-value">Dynamic Glow</span>
+                </div>
+            </div>
+            <p class="panel-tip">Move cursor to navigate the cosmos | Watch for shooting stars</p>
+        </div>
+    </section>
+
+    <!-- ==================== VIDEO DIVIDER 2 ==================== -->
+    <section class="video-divider">
+        <video muted loop playsinline preload="none" data-lazy-video>
+            <source src="https://cdn.pixabay.com/video/2020/06/19/42586-431756222_large.mp4" type="video/mp4">
+        </video>
+        <div class="video-divider-overlay"></div>
+        <div class="video-divider-text">
+            <span class="vd-label">CHAPTER 02</span>
+            <h2>About Me</h2>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about">
+        <div class="container">
+            <div class="about-layout">
+                <div class="about-left">
+                    <span class="section-tag">Who I Am</span>
+                    <h2 class="section-title">About</h2>
+                    <p class="about-bio">I'm Kartik Sahu — a full-stack developer who believes great software is like space exploration: it requires curiosity, precision, and the courage to venture into the unknown.</p>
+                    <p class="about-bio">With deep expertise in the MERN stack, I build applications that are not just functional, but extraordinary. Every line of code is written with purpose, every interface designed with intention.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="20">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Projects Delivered</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-right">
+                    <div class="about-visual">
+                        <div class="about-ring about-ring-1"></div>
+                        <div class="about-ring about-ring-2"></div>
+                        <div class="about-ring about-ring-3"></div>
+                        <div class="about-core">
+                            <img src="l-mark.png" alt="" aria-hidden="true" loading="lazy"
+                                 onerror="this.remove(); this.parentElement.classList.add('no-mark')">
+                            <span class="about-core-fallback">KS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Capabilities</span>
+                <h2 class="section-title">Tech Stack</h2>
+            </div>
+            <div class="skills-orbit">
+                <div class="skill-item" data-skill="React" data-level="95">
+                    <div class="skill-icon">&#9883;</div>
+                    <span>React</span>
+                </div>
+                <div class="skill-item" data-skill="Node.js" data-level="90">
+                    <div class="skill-icon">&#9881;</div>
+                    <span>Node.js</span>
+                </div>
+                <div class="skill-item" data-skill="MongoDB" data-level="88">
+                    <div class="skill-icon">&#9736;</div>
+                    <span>MongoDB</span>
+                </div>
+                <div class="skill-item" data-skill="Express" data-level="90">
+                    <div class="skill-icon">&#10148;</div>
+                    <span>Express</span>
+                </div>
+                <div class="skill-item" data-skill="TypeScript" data-level="85">
+                    <div class="skill-icon">&#10070;</div>
+                    <span>TypeScript</span>
+                </div>
+                <div class="skill-item" data-skill="Next.js" data-level="82">
+                    <div class="skill-icon">&#9670;</div>
+                    <span>Next.js</span>
+                </div>
+                <div class="skill-item" data-skill="PostgreSQL" data-level="80">
+                    <div class="skill-icon">&#9741;</div>
+                    <span>PostgreSQL</span>
+                </div>
+                <div class="skill-item" data-skill="Docker" data-level="78">
+                    <div class="skill-icon">&#9830;</div>
+                    <span>Docker</span>
+                </div>
+                <div class="skill-item" data-skill="GraphQL" data-level="82">
+                    <div class="skill-icon">&#9733;</div>
+                    <span>GraphQL</span>
+                </div>
+                <div class="skill-item" data-skill="Redis" data-level="75">
+                    <div class="skill-icon">&#10026;</div>
+                    <span>Redis</span>
+                </div>
+                <div class="skill-item" data-skill="AWS" data-level="77">
+                    <div class="skill-icon">&#9788;</div>
+                    <span>AWS</span>
+                </div>
+                <div class="skill-item" data-skill="Git" data-level="92">
+                    <div class="skill-icon">&#10042;</div>
+                    <span>Git</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE ==================== -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Journey</span>
+                <h2 class="section-title">Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 — Present</span>
+                        <h3>Full Stack Developer</h3>
+                        <p>Building scalable web applications with React, Node.js, and cloud infrastructure. Leading frontend architecture decisions and mentoring junior developers.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 — 2024</span>
+                        <h3>Frontend Developer</h3>
+                        <p>Developed responsive UI components, implemented state management solutions, and optimized application performance achieving 40% faster load times.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 — 2023</span>
+                        <h3>Freelance Developer</h3>
+                        <p>Delivered 15+ client projects ranging from e-commerce platforms to SaaS dashboards. Specialized in MERN stack and modern web technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== VIDEO CTA ==================== -->
+    <section class="video-cta">
+        <video muted loop playsinline preload="none" data-lazy-video>
+            <source src="https://cdn.pixabay.com/video/2021/05/23/74933-554074594_large.mp4" type="video/mp4">
+        </video>
+        <div class="video-cta-overlay"></div>
+        <div class="video-cta-content">
+            <h2>Ready to build<br>something extraordinary?</h2>
+            <a href="#contact" class="cta-btn">Let's Connect</a>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Contact</h2>
+            </div>
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <p>Have a project in mind? Let's create something that breaks the boundaries of ordinary.</p>
+                    <div class="contact-links">
+                        <a href="mailto:sahu446688@gmail.com">sahu446688@gmail.com</a>
+                        <a href="https://github.com/kartiksahu" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://linkedin.com/in/kartiksahu" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </div>
+                </div>
+                <form id="contactForm" class="contact-form" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" name="name" id="contactName" placeholder="Your name" required maxlength="100">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" id="contactEmail" placeholder="Your email" required maxlength="254">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message" id="contactMessage" placeholder="Tell me about your project..." rows="5" required maxlength="2000"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Transmission <span>&rarr;</span></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</div> <!-- close #meteor-wrapper -->
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <span class="footer-name">Kartik Sahu</span>
+                <span class="footer-copy">&copy; 2026 — Designed &amp; Built with passion</span>
+                <span class="footer-quote">"Mankind was born on Earth. It was never meant to die here."</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== INTERACTIVE RESUME MODAL ==================== -->
+    <div id="resumeModal" class="resume-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Resume">
+        <div class="resume-modal-overlay"></div>
+        <div class="resume-modal-container">
+            <button class="resume-modal-close" aria-label="Close modal">&times;</button>
+            <div class="resume-modal-actions">
+                <button class="resume-print-btn">Print / Save PDF</button>
+            </div>
+            <div class="resume-paper">
+                <div class="resume-header">
+                    <h1>KARTIK SAHU</h1>
+                    <div class="resume-contact">
+                        <a href="mailto:sahu446688@gmail.com" class="resume-contact-link">
+                            <svg class="resume-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            sahu446688@gmail.com
+                        </a>
+                        <a href="tel:+918874640336" class="resume-contact-link">
+                            <svg class="resume-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            +91 8874640336
+                        </a>
+                        <span class="resume-contact-link">
+                            <svg class="resume-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            Greater Noida, UP
+                        </span>
+                        <a href="https://github.com/kartiksahu" target="_blank" rel="noopener noreferrer" class="resume-contact-link">
+                            <svg class="resume-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            github.com/kartiksahu
+                        </a>
+                    </div>
+                </div>
+
+                <div class="resume-body-grid">
+                    <!-- LEFT COLUMN: PROJECTS -->
+                    <div class="resume-col-left">
+                        <section class="resume-section">
+                            <h2 class="resume-section-title">Projects</h2>
+
+                            <div class="resume-item">
+                                <div class="resume-item-header">
+                                    <span class="resume-item-title">VOID / CodeForge</span>
+                                    <span class="resume-item-date">2026</span>
+                                </div>
+                                <div class="resume-item-header">
+                                    <span class="resume-item-sub">React, TypeScript, Vite, Supabase, Tailwind CSS, Framer Motion, Monaco</span>
+                                </div>
+                                <ul class="resume-bullets">
+                                    <li>Built an AI-powered full-stack app builder platform where users prompt an AI engine to generate complete website code, choose design directions via a RAG-style option step, and publish to GitHub.</li>
+                                    <li>Engineered a multi-phase AI generation pipeline: RAG design suggestions &rarr; design plan approval &rarr; code generation &rarr; file persistence, with build phases exposed in real-time UI.</li>
+                                    <li>Integrated Monaco Editor for in-browser file editing, live preview rendering, version history snapshots, deploy logs, and a keyboard-driven command palette.</li>
+                                    <li>Implemented Supabase Auth (email/password + OAuth), Row-Level Security across all user-scoped tables, and a GitHub publishing service using the Git Data API for concurrent file uploads.</li>
+                                </ul>
+                            </div>
+
+                            <div class="resume-item">
+                                <div class="resume-item-header">
+                                    <span class="resume-item-title">DemandSense</span>
+                                    <span class="resume-item-date">2025</span>
+                                </div>
+                                <div class="resume-item-header">
+                                    <span class="resume-item-sub">React, Vite, FastAPI, SQLAlchemy, Prophet, ARIMA, FAISS, SQLite</span>
+                                </div>
+                                <ul class="resume-bullets">
+                                    <li>Developed a full-stack demand intelligence platform with a FastAPI backend supporting multi-horizon forecasting (30/60/90 days) using a Prophet + ARIMA weighted ensemble (70/30 split).</li>
+                                    <li>Implemented a RAG context pipeline using Sentence Transformers and FAISS for semantic ranking of NewsAPI articles, enabling AI-powered streaming reports via Anthropic/OpenAI with fallback templates.</li>
+                                    <li>Built accuracy tracking with MAE/MAPE metrics, CSV data ingestion with deduplication, PDF report export via ReportLab, and an SSE-powered streaming chat assistant.</li>
+                                    <li>Designed a cyber-themed React dashboard with Recharts visualizations, a 3D global exploration view using react-globe.gl + Three.js, and animated particles login background.</li>
+                                </ul>
+                            </div>
+
+                            <div class="resume-item">
+                                <div class="resume-item-header">
+                                    <span class="resume-item-title">DORO &mdash; Local AI Assistant</span>
+                                    <span class="resume-item-date">2025</span>
+                                </div>
+                                <div class="resume-item-header">
+                                    <span class="resume-item-sub">Python, FastAPI, WebSocket, Ollama, Three.js, React Three Fiber</span>
+                                </div>
+                                <ul class="resume-bullets">
+                                    <li>Built a fully local AI assistant using Ollama (qwen2.5:14b) with a FastAPI + WebSocket backend, ensuring zero cloud dependency and complete data privacy.</li>
+                                    <li>Integrated faster-whisper for real-time STT and piper-tts for TTS, enabling hands-free voice interaction; implemented long-term memory with ChromaDB vector database.</li>
+                                    <li>Designed a 3D particle orb frontend using React, Three.js, and React Three Fiber as the interactive visual interface for the assistant.</li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- RIGHT COLUMN -->
+                    <div class="resume-col-right">
+                        <section class="resume-section">
+                            <h2 class="resume-section-title">Education</h2>
+                            <div class="resume-item">
+                                <div class="resume-item-header">
+                                    <span class="resume-item-title" style="font-size: 14.5px;">NIET</span>
+                                    <span class="resume-item-date">2024 — 2028</span>
+                                </div>
+                                <div style="font-size: 13px; color: #334155; font-weight: 600; margin-top: 4px;">
+                                    B.Tech in CSE
+                                </div>
+                                <div class="resume-item-loc" style="margin-top: 2px;">Greater Noida, UP</div>
+                            </div>
+                        </section>
+
+                        <section class="resume-section">
+                            <h2 class="resume-section-title">Technical Skills</h2>
+                            <table class="resume-skills-table">
+                                <tr>
+                                    <td><strong>Languages</strong></td>
+                                    <td>JavaScript, TypeScript, Python, HTML, CSS, SQL, Java</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Frontend</strong></td>
+                                    <td>React, Next.js, Vite, Tailwind CSS, Three.js, GSAP, Recharts</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Backend</strong></td>
+                                    <td>Node.js, Express.js, FastAPI, Socket.io, WebSockets</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Databases</strong></td>
+                                    <td>MongoDB, SQLite, MySQL, ChromaDB, FAISS, Supabase</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>AI & Tools</strong></td>
+                                    <td>Ollama, Whisper, Piper TTS, Git, VS Code</td>
+                                </tr>
+                            </table>
+                        </section>
+
+                        <section class="resume-section">
+                            <h2 class="resume-section-title">Achievements</h2>
+                            <ul class="resume-bullets" style="margin-left: 0;">
+                                <li style="font-size: 12.5px;">Completed <strong>Oracle Academy &mdash; Java for AP Computer Science A</strong>, November 2025.</li>
+                                <li style="font-size: 12.5px;">Earned <strong>Cisco Academy &mdash; Introduction to Cybersecurity</strong> credential, February 2026.</li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+            integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+            integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+            integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"
+            integrity="sha512-1PKqXBz2ju2JcAerHKL0ldg0PT/1vr3LghYAtc59+9xy8e19QEtaNUyt1gprouyWnpOPqNJjL4gXMRMEpHYyLQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js?v=10"></script>
+</body>
+</html>

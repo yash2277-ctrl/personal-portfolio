@@ -1,0 +1,27 @@
+# ---- OS / editor noise ----
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- dependencies ----
+node_modules/
+
+# ---- private / sensitive: do NOT publish ----
+# Security audit output — publishing this tells attackers what to probe.
+PENTEST-RESULTS.md
+SECURITY-SUMMARY.txt
+security-test.html
+FINAL-TEST-RESULTS.txt
+
+# Personal documents
+kartik 2nd year.pdf
+*.pdf
+
+# Personal photo (site no longer uses it)
+profile.jpg
+
+# Local helper scripts
+Open Portfolio.bat
+Start-Local-Tunnel.bat
+Push to GitHub.bat
