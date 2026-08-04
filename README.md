@@ -356,3 +356,8 @@ Full Stack Developer | MERN Stack Specialist
 
 **Built with 💙 by Kartik Sahu**  
 *"Do not go gentle into that good night."*
+
+
+## Recent Updates
+
+- **2026-08-05**: docs: Update setup instructions
