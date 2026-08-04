@@ -363,3 +363,5 @@ Full Stack Developer | MERN Stack Specialist
 - **2026-08-05**: docs: Update setup instructions
 
 - **2026-08-05**: docs: Update setup instructions
+
+- **2026-08-05**: docs: Update setup instructions
